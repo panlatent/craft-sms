@@ -1,0 +1,42 @@
+{
+    "name": "panlatent/craft-sms",
+    "description": "Send SMS by any integrated gateways for CraftCMS",
+    "type": "craft-plugin",
+    "version": "0.1.0",
+    "require": {
+        "php": ">=8.0",
+        "craftcms/cms": "^3.7",
+        "alibabacloud/dysmsapi-20170525": "1.0.1",
+        "tencentcloud/sms": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Panlatent\\Craft\\Sms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "panlatent",
+            "email": "panlatent@gmail.com",
+            "homepage": "https://panlatent.com/"
+        }
+    ],
+    "minimum-stability": "stable",
+    "support": {
+        "docs": "https://github.com/panlatent/craft-sms/blob/master/README.md",
+        "issues": "https://github.com/panlatent/craft-sms/issues"
+    },
+    "extra": {
+        "name": "SMS",
+        "handle": "sms",
+        "hasCpSettings": true,
+        "hasCpSection": true,
+        "changelogUrl": "https://raw.githubusercontent.com/panlatent/craft-sms/master/CHANGELOG.md",
+        "class": "Panlatent\\Craft\\Sms\\Plugin",
+        "basePath": "<vendor-dir>/panlatent/craft-sms",
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    }
+}
